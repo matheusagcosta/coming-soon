@@ -1,0 +1,47 @@
+/** CSS Animations **/
+
+.pixel-1 {
+    width: 19px;
+    height: 19px;
+    background: #272526;
+    position: absolute;
+    z-index: 1;
+    bottom: 101%;
+    left: 359px;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: Moving;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    /* Standard syntax */
+    animation-name: Moving;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes Moving {
+    0%   {left:359px; bottom:100%;}
+    25%  {left:359px; bottom:75%;}
+    50%  {left:359px; bottom:50%;}
+    75%  {left:359px; bottom:25%;}
+    100% {left:359px; bottom:67px;}
+}
+
+/* Standard syntax */
+@keyframes Moving {
+    0%   {left:359px; bottom:100%;}
+    25%  {left:359px; bottom:75%;}
+    50%  {left:359px; bottom:50%;}
+    75%  {left:359px; bottom:25%;}
+    100% {left:359px; bottom:67px;}
+} 
