@@ -57,18 +57,29 @@ h2 {
     text-transform: uppercase;
     z-index: 5;
 }
-.centered {
-    bottom: -58px;
-	margin: 0;
-    position: fixed;
-    overflow: hidden;
-    min-height: 100%;
-    width: 100%;
-}
 
 @media only screen and (max-width: 480px) {
 
     html {
         background-size: 100%;
+    }
+
+    .pixel-1 {
+        left: 0 !important;
+    }
+    .pixel-1:after {
+        left: 30px !important;
+    }
+    .pixel-1:before {
+        left: 100px !important;
+    }
+    .pixel-2 {
+        right: 0 !important;
+    }
+    .pixel-2:after {
+        right: 30px !important;
+    }
+    .pixel-2:before {
+        right: 100px !important;
     }
 }
